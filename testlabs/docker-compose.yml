@@ -1,1 +1,13 @@
- 
+version: '3'
+services:
+  flask:
+    build: ./backend
+    container_name: project-Antananarivotest
+    environment:
+      - PYTHONUNBUFFERED=True
+    restart: on-failure
+    volumes:
+      - ./backend:/backend
+    ports:
+      - "6666:6666"
+    command: python main.py
