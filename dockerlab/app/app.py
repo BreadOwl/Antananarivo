@@ -1,4 +1,4 @@
- config = {
+config = {
         'user': 'root',
         'password': 'root',
         'host': 'db',
