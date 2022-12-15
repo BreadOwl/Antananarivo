@@ -2,5 +2,6 @@ FROM python:3.9
 WORKDIR /backend
 COPY requirements.txt /backend
 RUN pip3 install --upgrade pip -r requirements.txt
-COPY . /backend
+COPY main.py /backend
 EXPOSE 6666
+CMD python main.py
