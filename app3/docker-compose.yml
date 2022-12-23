@@ -5,11 +5,11 @@ services:
     links:
       - db
     ports:
-      - "5000:5000"
+      - "6666:6666"
   db:
     image: mysql:5.7
     ports:
-      - "3306:3306"
+      - "3307:3307"
     environment:
       MYSQL_ROOT_PASSWORD: root
     volumes:
