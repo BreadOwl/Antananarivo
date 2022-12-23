@@ -2,4 +2,5 @@ flask
 mysql-connector
 jinja2==3.1.2
 Flask-SQLAlchemy
-flask_migrate
+Flask-Migrate
+SQLAlchemy==1.4.39
