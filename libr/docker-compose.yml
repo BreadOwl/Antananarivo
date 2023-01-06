@@ -1,0 +1,14 @@
+version: "3"
+services:
+  libr:
+    build: .
+    links:
+      - db
+    command: python ./run.py
+    ports:
+      - "7777:7777"
+  db:
+    image: sqlite3
+    ports:
+      - "3308:3308"
+
