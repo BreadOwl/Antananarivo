@@ -1,4 +1,5 @@
 python
 Flask
 sqlite3
+sqlite
 werkzeug.exceptions
